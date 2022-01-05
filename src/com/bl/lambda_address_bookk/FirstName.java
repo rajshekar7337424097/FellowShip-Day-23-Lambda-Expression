@@ -1,4 +1,4 @@
-package com.bl.lambda_firstname;
+package com.bl.lambda_address_bookk;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -19,5 +19,4 @@ public class FirstName {
 		};
 		System.out.println(isFirstName.validate("^[A-Z]{1}[a-z]{3,9}$", userEntry));
 	}
-
 }
