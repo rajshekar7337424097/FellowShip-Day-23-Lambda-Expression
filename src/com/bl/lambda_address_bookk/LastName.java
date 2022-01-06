@@ -13,6 +13,7 @@ public class LastName {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Last Name :");
 		String userEntry = sc.next();
+		sc.close();
 		ILastName isLastName = (pattern, lastName) -> {
 			
 			return "The input provided is " + Pattern.compile(pattern).matcher(lastName).matches();

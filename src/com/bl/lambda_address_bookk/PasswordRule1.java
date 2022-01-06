@@ -12,11 +12,10 @@ public class PasswordRule1 {
 		System.out.println("Enter Password as per rule 1");
 		System.out.println("Password contains minimum 8 charectors");
 		String userEntry = sc.next();
-		
+		sc.close();
 		IPasswordRule1 isPasswordRule1 = (pattern , passwordRule1) -> {
 			return "password give is "+Pattern.compile(pattern).matcher(userEntry).matches();
 		};
 		System.out.println(isPasswordRule1.validate("^[a-z]{8}$", userEntry));
 	}
-
 }

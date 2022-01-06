@@ -12,6 +12,7 @@ public class EmailID {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter EmailID");
 		String userEntry = sc.next();
+		sc.close();
 		IEmail isEmailId = (pattern, emailId) -> {
 			return "The input is " + Pattern.compile(pattern).matcher(userEntry).matches();
 		};

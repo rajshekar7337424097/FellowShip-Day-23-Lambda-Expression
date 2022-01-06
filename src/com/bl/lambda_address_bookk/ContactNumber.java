@@ -11,7 +11,7 @@ public class ContactNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Phone number");
 		String userEntry = sc.next();
-		
+		sc.close();
 		IContactNumber isContactNumber = (pattern, contactNumber) -> {
 			return "The Input provided is "+Pattern.compile(pattern).matcher(userEntry).matches();
 		};
